@@ -1,0 +1,20 @@
+{
+  "name": "mes-ui-automation",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Modular MES UI automation harness using Playwright",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:list": "playwright test --list",
+    "codegen": "playwright codegen $MES_BASE_URL",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.0",
+    "@types/node": "^22.15.30",
+    "dotenv": "^16.5.0",
+    "typescript": "^5.8.3"
+  }
+}
